@@ -1,0 +1,119 @@
+<!-- 
+ Nama: Assyifa Saisarita
+ NIM: 250302005
+ Kelas: TI2A
+-->
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <h1 class="logo">Kalkulator Sederhana</h1>
+
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#kalkulator">Kalkulator</a>
+          </li>
+
+          <li>
+            <a href="#panduan">Panduan</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Konten utama -->
+    <main>
+      <!-- Section Kalkulator -->
+      <section id="kalkulator" class="kalkulator">
+        <h2 id="judul">Hitung Dua Angka</h2>
+
+        <p id="petunjuk">Masukkan dua angka, lalu pilih operasi.</p>
+
+        <!-- Kartu Kalkulator -->
+        <article class="kartu">
+          <!-- Input angka pertama -->
+          <label for="angka-a"> Angka pertama </label>
+
+          <input type="number" id="angka-a" placeholder="Contoh: 8" />
+
+          <!-- Input angka kedua -->
+          <label for="angka-b"> Angka kedua </label>
+
+          <input type="number" id="angka-b" placeholder="Contoh: 2" />
+
+          <!-- Tombol operasi -->
+          <div class="tombol-grid">
+            <button id="tombol-tambah" type="button">+</button>
+
+            <button id="tombol-kurang" type="button">−</button>
+
+            <button id="tombol-kali" type="button">×</button>
+
+            <button id="tombol-bagi" type="button">÷</button>
+          </div>
+
+          <!-- Tombol hapus -->
+          <button id="tombol-hapus" class="hapus" type="button">Hapus</button>
+
+          <!-- Hasil perhitungan -->
+          <p id="hasil" class="hasil">Hasil: 0</p>
+
+          <!-- Statistik -->
+          <p id="statistik">Jumlah perhitungan: 0</p>
+
+          <!-- Sifat hasil -->
+          <p id="sifat-hasil">Sifat hasil: –</p>
+
+          <!-- Tombol panduan -->
+          <button id="tombol-panduan" type="button">Tampilkan Panduan</button>
+        </article>
+      </section>
+
+      <!-- Section Panduan -->
+      <section id="panduan" style="display: none">
+        <h2>Panduan Penggunaan</h2>
+
+        <ol>
+          <li>Masukkan angka pertama.</li>
+
+          <li>Masukkan angka kedua.</li>
+
+          <li>Pilih salah satu operasi: tambah, kurang, kali, atau bagi.</li>
+
+          <li>Hasil perhitungan akan ditampilkan pada bagian hasil.</li>
+
+          <li>
+            Statistik jumlah perhitungan akan bertambah setiap kali perhitungan
+            berhasil.
+          </li>
+
+          <li>Gunakan tombol Hapus untuk mengosongkan kedua input.</li>
+
+          <li>
+            Gunakan tombol Tampilkan Panduan untuk melihat atau menyembunyikan
+            panduan.
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p id="info-pembuat">&copy; 2026 Praktikum Pemrograman Web Dasar</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
